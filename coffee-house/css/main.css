@@ -153,3 +153,49 @@
     grid-area: fourth;
 }
 
+/* MOBILE APP SECTION */
+
+.mobile-app {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+    color: var(--text-dark);
+}
+
+.mobile-app__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-app__offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-app__downloads {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-app__download {
+    padding: 12px 20px;
+    border: 1px solid var(--border-dark);
+    border-radius: 100px;
+    width: 200px;
+
+    display: flex;
+    gap: 8px;
+
+    background-color: transparent;
+    color: var(--text-dark);
+    fill: var(--text-dark);
+    transition: all 250ms ease;
+}
+
+.mobile-app__download:hover {
+    background-color: var(--bg-container);
+    color: var(--text-light);
+    fill: var(--text-light);
+}

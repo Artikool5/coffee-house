@@ -16,6 +16,9 @@
   /* FONT */
   font-family: "Inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 150%;
+
+  /* OTHER */
+  scroll-behavior: smooth;
 }
 
 h1,h2,h3,h4,p {
@@ -107,6 +110,12 @@ body {
 
 .page-header__link-container {
   list-style: none;
+  border-bottom: 1px solid transparent;
+  transition: all 250ms ease;
+}
+
+.page-header__link-container:hover {
+  border-bottom: 4px solid var(--border-dark);
 }
 
 .page-header__menu {

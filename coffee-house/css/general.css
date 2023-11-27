@@ -18,6 +18,10 @@
   line-height: 150%;
 }
 
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+
 .accent {
   font-style: italic;
   color: var(--text-accent);
@@ -133,10 +137,6 @@ body {
   gap: 40px;
 }
 
-.page-footer__offer {
-  margin: 0;
-}
-
 .page-footer__socials {
   display: inline-flex;
   gap: 12px;
@@ -168,10 +168,6 @@ body {
   justify-content: center;
 }
 
-.page-footer__contact-us {
-  margin: 0;
-}
-
 .page-footer__contacts {
   display: flex;
   flex-direction: column;
@@ -189,7 +185,6 @@ body {
 }
 
 .page-footer__schedule {
-  margin: 0;
   color: var(--text-light);
   transition: color 250ms ease;
 }

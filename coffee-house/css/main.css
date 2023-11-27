@@ -1,108 +1,155 @@
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  padding: 100px;
-  margin-top: 13px;
-  border-radius: 40px;
-  color: var(--text-light);
-  background-image: url(../assets/img-hero.jpg);
-  background-size: cover;
-  background-position-y: -30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    padding: 100px;
+    margin-top: 13px;
+    border-radius: 40px;
+    color: var(--text-light);
+    background-image: url(../assets/img-hero.jpg);
+    background-size: cover;
+    background-position-y: -30px;
 }
 
 .hero__text-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .hero__heading,
 .hero__description {
-  margin: 0;
+    margin: 0;
 }
 
 .hero__btn {
-  align-self: flex-start;
-  padding: 20px 78px;
-  background-color: var(--bg-body);
-  color: var(--text-dark);
-  transition: all 250ms ease;
+    align-self: flex-start;
+    padding: 20px 78px;
+    background-color: var(--bg-body);
+    color: var(--text-dark);
+    transition: all 250ms ease;
 }
 
 .hero__btn:hover {
-  background-color: var(--bg-container);
-  color: var(--text-light);
+    background-color: var(--bg-container);
+    color: var(--text-light);
 }
 
 /* SLIDER SECTION */
 
 .slider-section {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
 
 .slider {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
 }
 
 .slider__slide {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  text-align: center;
-  max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    max-width: 480px;
 }
 
 .slider__image {
-  width: 480px;
-  aspect-ratio: 1;
+    width: 480px;
+    aspect-ratio: 1;
 }
 
 .slider__description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-dark);
 }
 
 .slider__btn {
-  width: 60px;
-  height: 60px;
-  align-self: center;
-  text-align: center;
-  border: 1px solid var(--border-dark);
-  background-color: var(--bg-body);
-  stroke: var(--text-dark);
-  transition: all 250ms ease;
-  cursor: pointer;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    text-align: center;
+    border: 1px solid var(--border-dark);
+    background-color: var(--bg-body);
+    stroke: var(--text-dark);
+    transition: all 250ms ease;
+    cursor: pointer;
 }
 
 .slider__btn:hover {
-  border: 1px solid transparent;
-  background-color: var(--bg-container);
-  stroke: var(--text-light);
+    border: 1px solid transparent;
+    background-color: var(--bg-container);
+    stroke: var(--text-light);
 }
 
 .slider__indicators {
-  display: flex;
-  gap: 12px;
+    display: flex;
+    gap: 12px;
 }
 
 .slider__indicator {
-  width: 40px;
-  height: 4px;
-  border-radius: 100px;
-  background-color: var(--border-light);
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: var(--border-light);
 }
 
 .active-slide {
-  background-color: var(--border-dark);
+    background-color: var(--border-dark);
 }
+
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.about__images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 430px 120px 430px;
+    grid-template-areas:
+            'frst third'
+            'frst fourth'
+            'second fourth';
+    gap: 40px;
+}
+
+.about__image-container {
+    overflow: hidden;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.about__image-container:nth-child(1) {
+    background-image: url(../assets/about-1.jpg);
+    grid-area: frst;
+}
+
+.about__image-container:nth-child(2) {
+    background-image: url(../assets/about-2.jpg);
+    grid-area: second;
+}
+
+.about__image-container:nth-child(3) {
+    background-image: url(../assets/about-3.jpg);
+    grid-area: third;
+}
+
+.about__image-container:nth-child(4) {
+    background-image: url(../assets/about-4.jpg);
+    grid-area: fourth;
+}
+

@@ -135,17 +135,9 @@ body {
   transition: all 250ms ease;
 }
 
-.page-header__link-container:hover {
-  border-bottom: 4px solid var(--border-dark);
-}
-
 .page-header__menu {
   border: 2px solid transparent;
   transition: border 250ms ease;
-}
-
-.page-header__menu:hover {
-  border-bottom: 2px solid var(--text-dark);
 }
 
 .page-header__burger-menu-btn {
@@ -215,12 +207,6 @@ body {
   transition: all 250ms ease, border 1ms linear;
 }
 
-.page-footer__social-link:hover {
-  border: none;
-  background-color: var(--bg-body);
-  stroke: var(--text-dark);
-}
-
 .page-footer__contact-info {
   display: flex;
   flex-direction: column;
@@ -249,11 +235,6 @@ body {
   transition: color 250ms ease;
 }
 
-.page-footer__contact-link:hover,
-.page-footer__schedule:hover {
-  color: var(--text-dark);
-}
-
 @media screen and (max-width: 800px) {
   .hidden-on-small-screen {
     display: none;
@@ -263,5 +244,24 @@ body {
 @media screen and (min-width: 801px) {
   .hidden-on-big-screen {
     display: none;
+  }
+
+  .page-header__link-container:hover {
+    border-bottom: 4px solid var(--border-dark);
+  }
+
+  .page-header__menu:hover {
+    border-bottom: 2px solid var(--text-dark);
+  }
+
+  .page-footer__contact-link:hover,
+  .page-footer__schedule:hover {
+    color: var(--text-dark);
+  }
+
+  .page-footer__social-link:hover {
+    border: none;
+    background-color: var(--bg-body);
+    stroke: var(--text-dark);
   }
 }

@@ -46,7 +46,7 @@ p {
   line-height: 125%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
   .heading-1 {
     font-size: 72px;
     line-height: 105%;

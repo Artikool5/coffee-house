@@ -45,11 +45,6 @@
   transition: all 250ms ease;
 }
 
-.hero__btn:hover {
-  background-color: var(--bg-container);
-  color: var(--text-light);
-}
-
 /* SLIDER SECTION */
 
 .slider-section {
@@ -116,12 +111,6 @@
   .slider__btn {
     display: none;
   }
-}
-
-.slider__btn:hover {
-  border: 1px solid transparent;
-  background-color: var(--bg-container);
-  stroke: var(--text-light);
 }
 
 .slider__indicators {
@@ -266,8 +255,21 @@
   }
 }
 
-.mobile-app__download:hover {
-  background-color: var(--bg-container);
-  color: var(--text-light);
-  fill: var(--text-light);
+@media screen and (min-width: 801px) {
+  .hero__btn:hover {
+    background-color: var(--bg-container);
+    color: var(--text-light);
+  }
+
+  .slider__btn:hover {
+    border: 1px solid transparent;
+    background-color: var(--bg-container);
+    stroke: var(--text-light);
+  }
+
+  .mobile-app__download:hover {
+    background-color: var(--bg-container);
+    color: var(--text-light);
+    fill: var(--text-light);
+  }
 }

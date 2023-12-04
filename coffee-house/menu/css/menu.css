@@ -69,10 +69,6 @@ h1 {
   cursor: pointer;
 }
 
-.menu__item:hover img {
-  transform: scale(1);
-}
-
 .menu__image-wrap {
   border-radius: 40px;
   overflow: hidden;
@@ -96,4 +92,10 @@ h1 {
 
 .menu__price {
   margin-top: auto;
+}
+
+@media screen and (min-width: 801px) {
+  .menu__item:hover img {
+    transform: scale(1);
+  }
 }

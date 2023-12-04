@@ -175,7 +175,7 @@ body {
   color: var(--text-light);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .page-footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;

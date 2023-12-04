@@ -52,6 +52,7 @@ h1 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 310px);
+  justify-content: center;
   gap: 40px;
 }
 

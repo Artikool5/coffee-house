@@ -21,7 +21,11 @@
   scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -30,18 +34,27 @@ h1,h2,h3,h4,p {
   color: var(--text-accent);
 }
 
-/* TODO HEADINGS for future mobile */
-
 .heading-1 {
-  font-size: 72px;
+  font-size: 42px;
   font-weight: 600;
-  line-height: 105%;
+  line-height: 115%;
 }
 
 .heading-2 {
-  font-size: 60px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 125%;
+}
+
+@media screen and (min-width: 600px) {
+  .heading-1 {
+    font-size: 72px;
+    line-height: 105%;
+  }
+
+  .heading-2 {
+    font-size: 60px;
+  }
 }
 
 .heading-3 {
@@ -64,11 +77,13 @@ h1,h2,h3,h4,p {
 }
 
 .button {
+  background-color: transparent;
   border-radius: 100px;
 }
 
 .circle {
   border-radius: 50%;
+  aspect-ratio: 1;
 }
 
 .burger__link {
@@ -86,9 +101,15 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 16px 16px 0px;
   max-width: 1440px;
   margin-inline: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .main-container {
+    padding: 20px 40px 40px 40px;
+  }
 }
 
 /* HEADER */
@@ -127,17 +148,47 @@ body {
   border-bottom: 2px solid var(--text-dark);
 }
 
+.page-header__burger-menu-btn {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--border-dark);
+}
+
+.svg-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-header__burger-menu-btn svg {
+  stroke-width: 1.5px;
+  stroke: var(--border-dark);
+}
+
 /* FOOTER */
 
 .page-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  padding: 100px;
+  grid-template-columns: 1fr;
+  row-gap: 100px;
+  padding: 100px 60px;
   margin-top: 100px;
   border-radius: 40px;
   background-color: var(--bg-container);
   color: var(--text-light);
+}
+
+@media screen and (min-width: 800px) {
+  .page-footer {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    padding: 100px;
+  }
 }
 
 .page-footer__offer-container {
@@ -201,4 +252,16 @@ body {
 .page-footer__contact-link:hover,
 .page-footer__schedule:hover {
   color: var(--text-dark);
+}
+
+@media screen and (max-width: 800px) {
+  .hidden-on-small-screen {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .hidden-on-big-screen {
+    display: none;
+  }
 }

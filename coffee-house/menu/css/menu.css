@@ -1,0 +1,64 @@
+.menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+
+    color: var(--text-dark);
+}
+
+h1 {
+    max-width: 800px;
+}
+
+.menu__tabs {
+    display: flex;
+    gap: 16px;
+}
+
+.menu__tab {
+    border: 1px solid var(--border-light);
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+    background-color: var(--bg-body);
+    cursor: pointer;
+
+    transition: all 250ms ease;
+}
+
+.menu__active-tab {
+    border: 1px solid transparent;
+    background-color: var(--bg-container);
+    color: var(--text-light);
+}
+
+.menu__icon-container {
+    padding: 5px;
+    background-color: var(--border-light);
+}
+
+.menu__selection {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.menu__item {
+    border: 1px solid var(--border-light);
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.menu__description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menu__price {
+    justify-self: flex-end;
+}
